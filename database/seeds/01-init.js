@@ -1,14 +1,5 @@
 exports.seed = function (knex) {
-    const roles = [
-        {
-            name: "admin",
-        },
-        {
-            name: "user",
-        }
-    ];
-
-    return knex("roles")
-        .insert(roles)
-        .then(() => console.log("Seed data for roles table added."));
+    return knex('users').insert([
+        { id: 1, username: "aaaaa", password: "bbbbb", department: "ccccc" }
+    ]);
 };
