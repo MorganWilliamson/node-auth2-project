@@ -17,3 +17,5 @@ server.use("/api/users", usersRouter);
 server.get("/", (req, res) => {
     res.json({ api: "Up." });
 });
+
+module.exports = server;
