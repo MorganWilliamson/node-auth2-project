@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const router = require('express').Router();
 const User = require('../users/users-model');
 const { isValid } = require('../users/users-service');
-const { makeToken } = require('../middleware/make-token');
+const makeToken = require('../middleware/make-token');
 
 router.post('/register', (req, res) => {
     const creds = req.body;
@@ -25,7 +25,7 @@ router.post('/register', (req, res) => {
     }
 });
 
-router.post('login', (req, res) => {
+router.post('/login', (req, res) => {
     const { username, password } = req.body;
 
     if (isValid(req.body)) {
