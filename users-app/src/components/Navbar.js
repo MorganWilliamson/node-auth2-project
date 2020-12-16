@@ -24,22 +24,6 @@ function Navbar() {
                     </ul>
                 </div>
             </nav>
-
-            {/* <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
-                <Route path="/register">
-                    <Register />
-                </Route>
-                <Route path="/login">
-                    <Login />
-                </Route>
-                <Route path="/users">
-                    <Users />
-                </Route>
-            </Switch> */}
-
         </Router>
     )
 };

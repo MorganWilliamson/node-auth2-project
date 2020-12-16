@@ -1,6 +1,7 @@
 .navbar {
-    background: red;
+    background: grey;
     border: 3px solid black;
+    color: orange;
 }
 
 ul {
