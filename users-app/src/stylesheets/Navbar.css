@@ -1,0 +1,16 @@
+.navbar {
+    background: grey;
+    border: 3px solid black;
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    margin: 1%;
+}
